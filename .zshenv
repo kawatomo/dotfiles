@@ -40,3 +40,9 @@ alias platex="platex --kanji=euc"
 if [ -n ${DISPLAY} ]; then
     #export DISPLAY=:0.0
 fi
+
+# android
+export PATH=$PATH:/Applications/android-sdk-macosx/tools
+export PATH=$PATH:/Applications/android-sdk-macosx/platform-tools
+export PATH=$PATH:/Applications/android-ndk-r10d
+
