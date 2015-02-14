@@ -11,29 +11,8 @@ colors
 #predict-on
 
 # プロンプトの設定
-case $HOSTNAME in
-'iwami.higlab.net')
-	PROMPT="[%{${fg[magenta]}%}%t%{${reset_color}%}-%{${fg[cyan]}%}%n%{${reset_color}%}@%{${fg_bold[green]}%}%m%{${reset_color}%}]%(!.#.$) "
-	export AC_ALL=ja_JP.eucJP
-	export LANG=ja_JP.eucJP
-	export LC_CTYPE=ja_JP.eucJP
-	alias musashi='telnet -l kawada  musashi'
-	alias ard='sudo chmod 666  /dev/ttyUSB*'
-	alias emacs='TERM=xterm-256color emacs'
-;;
-'musashi.higlab.fr.dendai.ac.jp')
-	PROMPT="[%{${fg[magenta]}%}%t%{${reset_color}%}-%{${fg[cyan]}%}%n%{${reset_color}%}@%{${fg_bold[red]}%}%m%{${reset_color}%}]%(!.#.$) "
-	export AC_ALL=ja_JP.eucJP
-	export LANG=ja_JP.eucJP
-	export LC_CTYPE=ja_JP.eucJP
-	alias sudo='/bin/false'
-	alias emacs='TERM=xterm-256color emacs -nw'
-;;
-*)
-	PROMPT="[%{${fg[magenta]}%}%t%{${reset_color}%}-%{${fg[cyan]}%}%n%{${reset_color}%}@%{${fg_bold[blue]}%}%m%{${reset_color}%}]%(!.#.$) "
-	alias emacs='TERM=xterm-256color emacs'
-;;
-esac
+PROMPT="[%{${fg[magenta]}%}%t%{${reset_color}%}-%{${fg[cyan]}%}%n%{${reset_color}%}@%{${fg_bold[blue]}%}%m%{${reset_color}%}]%(!.#.$) "
+alias emacs='TERM=xterm-256color emacs'
 
 PROMPT2="%{${fg[blue]}%}%_> %{${reset_color}%}"
 SPROMPT="%{${fg[red]}%}correct: %R -> %r [nyae]? %{${reset_color}%}"
@@ -155,9 +134,9 @@ setopt no_clobber
 
 # あれば便利
 alias j="jobs -l"
-alias x="exit"
-alias s="screen"
-alias mu="mutt"
+#alias x="exit"
+#alias s="screen"
+#alias mu="mutt"
 alias df="df -H"
 alias du="du -h"
 alias rm="rm -i"
@@ -173,8 +152,8 @@ alias i="whoami"
 alias ifconfig="/sbin/ifconfig"
 alias ..="cd .."
 alias f="finger"
-alias doc="cd /home/share/doc"
-alias ukill="skill -kill"
-alias dvips="dvips -t a4"
+#alias doc="cd /home/share/doc"
+#alias ukill="skill -kill"
+#alias dvips="dvips -t a4"
 
-alias musashi="ssh kawada@musashi.higlab.net -p 6746 -i /Users/kawada/.ssh/kawadakey"
+#alias musashi="ssh kawada@musashi.higlab.net -p 6746 -i /Users/kawada/.ssh/kawadakey"

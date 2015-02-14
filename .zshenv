@@ -33,16 +33,20 @@ export LISTMAX
 alias javac='javac -J-Dfile.encoding=UTF-8'
 alias java='java -Dfile.encoding=UTF-8'
 
+# android
+export PATH=$PATH:/Applications/android-sdk-macosx/platform-tools
+export PATH=$PATH:/Applications/android-sdk-macosx/tools
+export PATH=$PATH:/Applications/android-ndk-r10b
+
+## Cocos ...  Androidビルドする場合追記
+export ANDROID_SDK_ROOT=/Applications/android-sdk-macosx
+export NDK_ROOT=/Applications/android-ndk-r10b
+export ANT_ROOT=/usr/local/bin/ant
+
 # Tex さんは EUC でしかコンパイルしないので
-alias platex="platex --kanji=euc"
+#alias platex="platex --kanji=euc"
 
 #
 if [ -n ${DISPLAY} ]; then
     #export DISPLAY=:0.0
 fi
-
-# android
-export PATH=$PATH:/Applications/android-sdk-macosx/tools
-export PATH=$PATH:/Applications/android-sdk-macosx/platform-tools
-export PATH=$PATH:/Applications/android-ndk-r10d
-

@@ -18,3 +18,6 @@ export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
 # Add environment variable ANT_ROOT for cocos2d-x
 export ANT_ROOT=/usr/local/Cellar/ant/1.9.4/libexec/bin
 export PATH=$ANT_ROOT:$PATH
+
+# pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
